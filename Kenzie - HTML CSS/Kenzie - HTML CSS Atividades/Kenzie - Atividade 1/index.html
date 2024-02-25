@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <form action="">
+    
+        <label for="input-nome">Nome</label>
+        <div></div>
+        <input id="input-nome" type="text" name="nome" required placeholder="Digite seu nome aqui...">
+        <div></div>
+
+        <label for="input-email">E-mail</label>
+        <div></div>
+        <input id="email" type="email" name="input-email" required placeholder="Digite seu e-mail aqui...">
+        <div></div>
+
+        <label for="textarea-descricao">O que te levou a participar do evento?</label>
+        <div></div>
+        <textarea 
+            id="textarea-descricao"
+            name="mensagem" 
+            cols="20" rows="5"
+            placeholder="Desqueva aqui..."
+        ></textarea>
+        <div></div>
+
+        <label for="select-modulo">Selecione um módulo</label>
+        <div></div>
+        <select id="select-modulo" name="modulo" required>
+            <option selected disabled>Escolher módulo</option>
+            <option value="modulo1">Modulo 1</option>
+            <option value="modulo2">Modulo 2</option>
+            <option value="modulo3">Modulo 3</option>
+            <option value="modulo4">Modulo 4</option>
+            <option value="modulo5">Modulo 5</option>
+        </select>
+        <div></div>
+
+        <label for="senha1">Cadastre sua senha</label>
+        <div></div>
+        <input id="senha1" type="password" name="senha" required placeholder="Digite sua senha aqui...">
+        <div></div>
+        
+        <label for="confirma_senha">Confirme a senha</label>
+        <div></div>
+        <input id="confirma_senha" type="password" name="confirma_senha" required placeholder="Repita a senha...">
+        <div></div>
+
+        <p>Deseja receber novidades em seu email?</p>
+
+        <label for="radio-sim">Sim</label>
+        <input id="radio-sim" type="radio" name="notificacao" value="Sim">
+
+        <label for="radio-nao">Não</label>
+        <input id="radio-nao" type="radio" name="notificacao" value="Nao">
+
+        <button>Cadastrar</button>
+
+    </form>
+    
+</body>
+</html>

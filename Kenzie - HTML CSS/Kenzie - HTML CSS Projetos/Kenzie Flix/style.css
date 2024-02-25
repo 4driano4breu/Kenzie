@@ -1,0 +1,77 @@
+*{
+    list-style: none;
+}
+body{
+    background-color: #000000;
+    font-family: Arial, sans-serif;   
+    display: flex;
+    justify-content: center;
+}
+body .question{
+    margin-top: 40px;
+    color: #ffffff;
+}
+.container {
+    color: #808080;
+}
+
+.logo{
+    text-align: center;
+}
+.question{
+    text-align: center;
+}   
+.profiles{
+    width:1000px;
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile{
+    width: 20%;
+}
+.profile img{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10%;
+    border: 2px solid rgba(0,0,0,0);
+    border-top: 2px solid rgba(0,0,0,0);
+}
+.manage-profile {
+    text-align: center;
+    margin-top: 20px;
+}
+.manage-profile button {
+    margin-top: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid rgba(255,255,255,1);
+    border-top: 2px solid rgba(255,255,255,0.7);
+    border-radius: 4px;
+    padding: 10px 30px;
+}
+
+.manage-profile button:hover{
+    border: 2px solid rgba(80,80,80,1);
+    border-top: 2px solid rgba(80,80,80,0.7);
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.profile:hover img{
+    border: 2px solid rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+.profile:hover p{
+    color: white;
+    cursor: pointer;
+}
+
+.question:hover{
+    cursor:default;
+}
