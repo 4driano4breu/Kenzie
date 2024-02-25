@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.mini-title{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.mini-title:hover{
+    background-color: blue;
+    color: white;
+}
