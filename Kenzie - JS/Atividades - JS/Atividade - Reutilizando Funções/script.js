@@ -24,7 +24,54 @@ console.log(resultado)
 // Mostre a frase através do console.
 
 function letraInicial(nome,sobrenome){
-    return nome[0],sobrenome[0]
+    const primeiraLetraNome = nome[0].toUpperCase()
+    const primeiraLetraSobrenome = sobrenome[0].toUpperCase()
+    
+    return `${primeiraLetraNome} e ${primeiraLetraSobrenome}`
 }
 
-function nomeCompleto
+function nomeCompleto(){
+
+    const letraIniciais = letraInicial("Adriano", "Abreu")
+
+    return `As letras inicias do meu nome completo são ${letraIniciais}`
+    
+}
+console.log(nomeCompleto())
+
+
+// Exercício 3
+// O objetivo deste exercício é desenvolver três funções para obter um resultado final. É necessário obter o número de letras de um produto e verificar se o total de caracteres é par ou ímpar. Siga os tópicos a seguir:
+
+// Declare uma função par que receberá um parâmetro n, e este parâmetro representa um número. Desenvolva a lógica para retornar true se o número foi par ou false se não for par.
+// Declare uma função impar que receberá uma parâmetro n, e este parâmetro representa um número. Desenvolva a lógica para retornar true se o número foi ímpar ou false se não for ímpar.
+// Declare uma função letrasProduto que receberá um parâmetro produto, e este produto representará uma string. Você deverá obter o número de caracteres, ou seja, o tamanho da palavra produto e reutilizando as funções par e impar você deverá verificar se o tamanho é par ou ímpar.
+// Retorne "O número de letras deste produto é par" se o tamanho da palavra produto for par ou "O número de letras deste produto é ímpar" se o tamanho da palavra produto for ímpar.
+
+function par(n){
+
+    if(2 % n == 0){
+        return true
+    }return false
+}
+
+function impar(n){
+
+    if(n % 2 !== 0){
+        return true
+    }return false
+}
+
+function letrasProduto(produto){
+    const tamanhoProduto = produto.lenght
+    if(par(tamanhoProduto)){
+        return "O número de letras deste produto é par"
+    }
+    else if(impar(tamanhoProduto)){
+        return "O número de letras deste produto é ímpar"
+    }
+}
+
+console.log(letrasProduto("Esponja"))
+
+
